@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus TV - About the Channel</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    .about-section { padding: 50px 0; }
+    .about-alt { padding: 50px 0; background-color: var(--light-teal); }
+
+    /* TEAM CARDS */
+    .team-card {
+      background-color: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 3px 14px rgba(13,43,46,0.09);
+    }
+
+    .team-card img { width: 100%; height: 210px; object-fit: cover; }
+
+    .team-body { padding: 18px; }
+    .team-body h3 { font-size: 1rem; margin-bottom: 4px; }
+    .team-body p  { font-size: 0.85rem; color: var(--muted); }
+
+    /* CONTACT CARDS */
+    .contact-card {
+      background-color: var(--white);
+      border-radius: 10px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(13,43,46,0.08);
+    }
+
+    .contact-card .icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .contact-card h3 { font-size: 1rem; margin-bottom: 8px; }
+    .contact-card p, .contact-card a { font-size: 0.9rem; color: var(--muted); text-decoration: none; }
+    .contact-card a:hover { color: var(--teal-light); }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Nexus <span>TV</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="highlights.html">Video Highlights</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>About Nexus TV</h1>
+      <p>Who we are and what we stand for</p>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="container">
+
+      <div class="info-block" style="max-width:720px; margin: 0 auto 40px; text-align:center;">
+        <h3>Our Story</h3>
+        <p>Nexus TV is a fictional television channel created to represent quality entertainment, news, and educational content for viewers across Lesotho and Southern Africa. We believe in the power of storytelling, community, and connection through television.</p>
+      </div>
+
+      <!-- SHOW DESCRIPTIONS - Navigation Menus -->
+      <h2 class="sec-title" style="margin-bottom:20px;">Navigation Menus — Our Channels</h2>
+      <div class="grid-3" style="margin-bottom:40px;">
+
+        <div class="info-block" style="text-align:center;">
+          <div style="font-size:2rem; margin-bottom:8px;">📺</div>
+          <h3>Nexus TV 1</h3>
+          <p>Our main channel — news, drama, and prime time entertainment.</p>
+          <br />
+          <a href="schedule.html" class="btn btn-outline" style="font-size:0.82rem; padding:7px 16px;">View Schedule</a>
+        </div>
+
+        <div class="info-block" style="text-align:center;">
+          <div style="font-size:2rem; margin-bottom:8px;">⚽</div>
+          <h3>Nexus Sports</h3>
+          <p>24-hour sports coverage, live matches, and sports analysis.</p>
+          <br />
+          <a href="shows.html" class="btn btn-outline" style="font-size:0.82rem; padding:7px 16px;">See Shows</a>
+        </div>
+
+        <div class="info-block" style="text-align:center;">
+          <div style="font-size:2rem; margin-bottom:8px;">🎬</div>
+          <h3>Nexus Movies</h3>
+          <p>Films from Africa and around the world, all day, every day.</p>
+          <br />
+          <a href="shows.html" class="btn btn-outline" style="font-size:0.82rem; padding:7px 16px;">See Shows</a>
+        </div>
+
+      </div>
+
+      <!-- TEAM / STAFF IMAGES -->
+      <h2 class="sec-title" style="margin-bottom:20px;">Meet Our Team</h2>
+      <div class="grid-3">
+
+        <div class="team-card">
+          <img src="images/a1.jpg" alt="CEO" />
+          <div class="team-body">
+            <h3>Teboho Ntlatla</h3>
+            <p>Chief Executive Officer</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/a2.jpg" alt="Editor" />
+          <div class="team-body">
+            <h3>Lineo Moleboheng</h3>
+            <p>Head of Programming</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="images/a3.jpg" alt="Producer" />
+          <div class="team-body">
+            <h3>Thabo Letsie</h3>
+            <p>Executive Producer</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOW DESCRIPTIONS LIST -->
+  <section class="about-alt">
+    <div class="container">
+
+      <h2 class="sec-title" style="margin-bottom:16px;">What We Broadcast</h2>
+      <ul class="clean-list" style="max-width:620px; margin-bottom:40px;">
+        <li>Daily local and international news</li>
+        <li>Original African drama series</li>
+        <li>Live sports coverage and analysis</li>
+        <li>Music and entertainment programmes</li>
+        <li>Wildlife and nature documentaries</li>
+        <li>Educational content for youth and schools</li>
+        <li>Weekend films and movie marathons</li>
+      </ul>
+
+      <!-- CONTACT -->
+      <h2 class="sec-title" style="margin-bottom:20px;">Contact Us</h2>
+      <div class="grid-3">
+
+        <div class="contact-card">
+          <div class="icon">📧</div>
+          <h3>Email</h3>
+          <a href="mailto:ntlatlapomoleboheng@gmail.com">ntlatlapomoleboheng@gmail.com</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <h3>Phone</h3>
+          <a href="tel:+26656106213">+266 5610 6213</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="icon">📍</div>
+          <h3>Location</h3>
+          <p>Maseru, Lesotho</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="shows.html">Shows</a>
+      <a href="highlights.html">Video Highlights</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter / X">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="YouTube">▶️</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nexus TV. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

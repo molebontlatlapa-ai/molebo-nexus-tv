@@ -1,0 +1,286 @@
+/* ============================================
+   NEXUS TV - Main Stylesheet
+   Color: Dark Green-Blue (Teal/Midnight)
+   NO borders, NO dividers, NO styled lines
+============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;900&family=Crimson+Pro:wght@400;600&display=swap');
+
+:root {
+  --teal-dark:  #0d2b2e;
+  --teal-mid:   #133c41;
+  --teal:       #1a5c63;
+  --teal-light: #22808a;
+  --cyan:       #2ab5c4;
+  --soft-bg:    #f0f7f8;
+  --white:      #ffffff;
+  --text:       #0d2b2e;
+  --muted:      #5a8085;
+  --light-teal: #e0f4f6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: var(--soft-bg);
+  color: var(--text);
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: 'Crimson Pro', serif;
+  color: var(--teal-dark);
+}
+
+a { color: var(--teal-light); text-decoration: none; }
+a:hover { color: var(--cyan); text-decoration: underline; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+/* ============================================
+   HEADER
+============================================ */
+header {
+  background-color: var(--teal-dark);
+  padding: 16px 0;
+}
+
+.header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.logo span { color: var(--cyan); }
+
+nav ul { display: flex; gap: 4px; }
+
+nav ul li a {
+  color: #9dd4da;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: var(--teal-light);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ============================================
+   PAGE HERO
+============================================ */
+.page-hero {
+  background-color: var(--teal-mid);
+  padding: 45px 0;
+  text-align: center;
+}
+
+.page-hero h1 { color: var(--white); font-size: 2.1rem; margin-bottom: 8px; }
+.page-hero p  { color: #9dd4da; font-size: 0.97rem; }
+
+/* ============================================
+   SECTION TITLE
+============================================ */
+.sec-title {
+  font-size: 1.6rem;
+  color: var(--teal-dark);
+  margin-bottom: 22px;
+}
+
+/* ============================================
+   CARDS
+============================================ */
+.card {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(13,43,46,0.09);
+}
+
+.card img { width: 100%; height: 195px; object-fit: cover; }
+
+.card-body { padding: 18px; }
+.card-body h3 { font-size: 1.05rem; margin-bottom: 7px; color: var(--teal-dark); }
+.card-body p  { font-size: 0.88rem; color: var(--muted); }
+
+/* ============================================
+   BADGE
+============================================ */
+.badge {
+  display: inline-block;
+  background-color: var(--light-teal);
+  color: var(--teal);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 9px;
+}
+
+/* ============================================
+   GRIDS
+============================================ */
+.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; }
+
+/* ============================================
+   INFO BLOCK (no border - shadow only)
+============================================ */
+.info-block {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 26px;
+  box-shadow: 0 2px 12px rgba(13,43,46,0.08);
+  margin-bottom: 22px;
+}
+
+.info-block h3 { font-size: 1.1rem; margin-bottom: 9px; }
+.info-block p  { font-size: 0.9rem; color: var(--muted); }
+
+/* ============================================
+   CLEAN LIST (no borders)
+============================================ */
+.clean-list li {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 13px 18px;
+  margin-bottom: 9px;
+  font-size: 0.92rem;
+  color: var(--text);
+  box-shadow: 0 1px 6px rgba(13,43,46,0.07);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clean-list li::before {
+  content: "▸";
+  color: var(--cyan);
+  font-size: 0.8rem;
+}
+
+/* ============================================
+   BUTTONS
+============================================ */
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-teal {
+  background-color: var(--teal-light);
+  color: var(--white);
+}
+
+.btn-teal:hover {
+  background-color: var(--teal-dark);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.btn-outline {
+  box-shadow: inset 0 0 0 2px var(--teal-light);
+  color: var(--teal-light);
+}
+
+.btn-outline:hover {
+  background-color: var(--teal-light);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ============================================
+   FOOTER — simple, no extra styling
+============================================ */
+footer {
+  background-color: var(--teal-dark);
+  padding: 36px 0 20px;
+  margin-top: 60px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.footer-nav a {
+  color: #9dd4da;
+  font-size: 0.88rem;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+
+.footer-nav a:hover { color: var(--white); text-decoration: none; }
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.footer-social a {
+  color: #9dd4da;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.footer-social a:hover { color: var(--cyan); }
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p { color: #6aabb2; font-size: 0.82rem; }
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 600px) {
+  .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .header-inner { flex-direction: column; gap: 12px; }
+  nav ul { flex-wrap: wrap; justify-content: center; gap: 5px; }
+  .logo { font-size: 1.3rem; }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus TV - Shows</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    .shows-section { padding: 50px 0; }
+    .shows-alt { padding: 50px 0; background-color: var(--light-teal); }
+
+    /* SHOW CARD */
+    .show-card {
+      background-color: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(13,43,46,0.09);
+    }
+
+    .show-card img { width: 100%; height: 200px; object-fit: cover; }
+
+    .show-body { padding: 18px; }
+    .show-body h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .show-body p  { font-size: 0.87rem; color: var(--muted); margin-bottom: 10px; }
+
+    .show-meta {
+      font-size: 0.8rem;
+      color: var(--teal-light);
+      font-weight: 600;
+    }
+
+    /* FEATURED SHOW (horizontal) */
+    .featured-show {
+      background-color: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(13,43,46,0.09);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 30px;
+    }
+
+    .featured-show img { width: 100%; height: 280px; object-fit: cover; }
+
+    .featured-show-body {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .featured-show-body h2 { font-size: 1.6rem; margin-bottom: 12px; }
+    .featured-show-body p  { font-size: 0.92rem; color: var(--muted); margin-bottom: 16px; }
+
+    @media (max-width: 700px) {
+      .featured-show { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Nexus <span>TV</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="shows.html" class="active">Shows</a></li>
+          <li><a href="highlights.html">Video Highlights</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>Our Shows</h1>
+      <p>Drama, news, sports, documentaries and more</p>
+    </div>
+  </div>
+
+  <!-- FEATURED SHOW -->
+  <section class="shows-section">
+    <div class="container">
+
+      <h2 class="sec-title" style="margin-bottom:20px;">Featured Show</h2>
+
+      <div class="featured-show">
+        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80" alt="Broken Ties" />
+        <div class="featured-show-body">
+          <span class="badge">Drama</span>
+          <h2>Broken Ties</h2>
+          <p>A compelling drama series about a family caught between tradition and modern pressures. Award-winning writing and an all-African cast make this one of our most watched shows.</p>
+          <p class="show-meta">📅 Sundays at 8 PM &nbsp;|&nbsp; Season 2 Now Airing</p>
+          <br />
+          <a href="highlights.html" class="btn btn-teal">Watch Trailer</a>
+        </div>
+      </div>
+
+      <!-- SHOW LIST — Navigation menus / show descriptions -->
+      <h2 class="sec-title" style="margin-bottom:20px;">All Shows</h2>
+      <div class="grid-3">
+
+        <div class="show-card">
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&q=80" alt="Evening News" />
+          <div class="show-body">
+            <span class="badge">News</span>
+            <h3>The Evening News</h3>
+            <p>Top stories from Lesotho and around the world, every weekday.</p>
+            <div class="show-meta">Mon–Fri &nbsp;|&nbsp; 7:00 PM</div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=400&q=80" alt="Sports" />
+          <div class="show-body">
+            <span class="badge">Sports</span>
+            <h3>Sports Wrap-Up</h3>
+            <p>Scores, highlights, and analysis from local and international sport.</p>
+            <div class="show-meta">Mon–Fri &nbsp;|&nbsp; 9:00 PM</div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&q=80" alt="Documentary" />
+          <div class="show-body">
+            <span class="badge">Documentary</span>
+            <h3>Wild Southern Africa</h3>
+            <p>Stunning wildlife documentary filmed across the southern region.</p>
+            <div class="show-meta">Tue &amp; Thu &nbsp;|&nbsp; 8:00 PM</div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80" alt="Music" />
+          <div class="show-body">
+            <span class="badge">Music</span>
+            <h3>Sounds of Africa</h3>
+            <p>Live performances and artist interviews from across the continent.</p>
+            <div class="show-meta">Saturdays &nbsp;|&nbsp; 7:00 PM</div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80" alt="Talk Show" />
+          <div class="show-body">
+            <span class="badge">Talk Show</span>
+            <h3>Late Night Talk</h3>
+            <p>Conversations with interesting guests from business, arts, and politics.</p>
+            <div class="show-meta">Mon–Fri &nbsp;|&nbsp; 11:00 PM</div>
+          </div>
+        </div>
+
+        <div class="show-card">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Business" />
+          <div class="show-body">
+            <span class="badge">Business</span>
+            <h3>The Boardroom</h3>
+            <p>Weekly programme covering business news, trends, and entrepreneurship.</p>
+            <div class="show-meta">Wednesdays &nbsp;|&nbsp; 8:00 PM</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOW DESCRIPTIONS (unordered list) -->
+  <section class="shows-alt">
+    <div class="container">
+      <h2 class="sec-title" style="margin-bottom:16px;">Coming Soon</h2>
+      <ul class="clean-list" style="max-width:600px;">
+        <li>The Village — New drama series premiering April 2026</li>
+        <li>Goal! — A new football magazine programme</li>
+        <li>Cooking Africa — A food and culture series</li>
+        <li>Young &amp; Bold — A youth empowerment talk show</li>
+        <li>Science Now — Weekly science and technology programme</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="shows.html">Shows</a>
+      <a href="highlights.html">Video Highlights</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter / X">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="YouTube">▶️</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nexus TV. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

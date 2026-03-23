@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus TV - Programs Schedule</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    .schedule-section { padding: 50px 0; }
+
+    /* PROGRAM SCHEDULE TABLE */
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(13,43,46,0.09);
+      margin-bottom: 30px;
+    }
+
+    .schedule-table thead {
+      background-color: var(--teal-dark);
+      color: var(--white);
+    }
+
+    .schedule-table thead th {
+      padding: 14px 16px;
+      text-align: left;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .schedule-table tbody tr:nth-child(even) {
+      background-color: var(--light-teal);
+    }
+
+    .schedule-table tbody tr:nth-child(odd) {
+      background-color: var(--white);
+    }
+
+    .schedule-table tbody td {
+      padding: 13px 16px;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    .time-col { color: var(--teal-light); font-weight: 700; white-space: nowrap; }
+
+    .schedule-alt { background-color: var(--light-teal); padding: 50px 0; }
+
+    @media (max-width: 600px) {
+      .schedule-table, .schedule-table thead, .schedule-table tbody, .schedule-table th, .schedule-table td, .schedule-table tr {
+        display: block;
+      }
+      .schedule-table thead tr { display: none; }
+      .schedule-table tbody td { padding: 8px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Nexus <span>TV</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html" class="active">Schedule</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="highlights.html">Video Highlights</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>Programs Schedule</h1>
+      <p>What's on Nexus TV this week</p>
+    </div>
+  </div>
+
+  <!-- MONDAY - FRIDAY SCHEDULE -->
+  <section class="schedule-section">
+    <div class="container">
+
+      <h2 class="sec-title" style="margin-bottom:18px;">Monday – Friday</h2>
+
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Programme</th>
+            <th>Category</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time-col">06:00</td>
+            <td>Morning Wake-Up Show</td>
+            <td>Lifestyle</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">07:00</td>
+            <td>Breakfast News</td>
+            <td>News</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">09:00</td>
+            <td>Children's Corner</td>
+            <td>Kids</td>
+            <td>2 hrs</td>
+          </tr>
+          <tr>
+            <td class="time-col">12:00</td>
+            <td>Midday News</td>
+            <td>News</td>
+            <td>30 min</td>
+          </tr>
+          <tr>
+            <td class="time-col">13:00</td>
+            <td>Afternoon Movie</td>
+            <td>Film</td>
+            <td>2 hrs</td>
+          </tr>
+          <tr>
+            <td class="time-col">16:00</td>
+            <td>School and Youth</td>
+            <td>Education</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">17:00</td>
+            <td>Sports Today</td>
+            <td>Sports</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">19:00</td>
+            <td>The Evening News</td>
+            <td>News</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">20:00</td>
+            <td>Prime Time Drama</td>
+            <td>Drama</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">21:00</td>
+            <td>Sports Wrap-Up</td>
+            <td>Sports</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">23:00</td>
+            <td>Late Night Talk</td>
+            <td>Talk Show</td>
+            <td>1 hr</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+
+  <!-- WEEKEND SCHEDULE -->
+  <section class="schedule-alt">
+    <div class="container">
+
+      <h2 class="sec-title" style="margin-bottom:18px;">Saturday &amp; Sunday</h2>
+
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Programme</th>
+            <th>Category</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time-col">07:00</td>
+            <td>Weekend Cartoons</td>
+            <td>Kids</td>
+            <td>2 hrs</td>
+          </tr>
+          <tr>
+            <td class="time-col">09:00</td>
+            <td>Weekend Lifestyle Show</td>
+            <td>Lifestyle</td>
+            <td>2 hrs</td>
+          </tr>
+          <tr>
+            <td class="time-col">12:00</td>
+            <td>Saturday Live Sports</td>
+            <td>Sports</td>
+            <td>3 hrs</td>
+          </tr>
+          <tr>
+            <td class="time-col">15:00</td>
+            <td>Movie Afternoon</td>
+            <td>Film</td>
+            <td>2 hrs</td>
+          </tr>
+          <tr>
+            <td class="time-col">19:00</td>
+            <td>Weekend News</td>
+            <td>News</td>
+            <td>30 min</td>
+          </tr>
+          <tr>
+            <td class="time-col">19:30</td>
+            <td>Sounds of Africa</td>
+            <td>Music</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">20:00</td>
+            <td>Broken Ties (Drama)</td>
+            <td>Drama</td>
+            <td>1 hr</td>
+          </tr>
+          <tr>
+            <td class="time-col">21:00</td>
+            <td>Late Night Movie</td>
+            <td>Film</td>
+            <td>2 hrs</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="shows.html">Shows</a>
+      <a href="highlights.html">Video Highlights</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter / X">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="YouTube">▶️</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nexus TV. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

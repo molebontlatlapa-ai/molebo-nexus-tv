@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus TV - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: var(--white);
+      font-size: 3rem;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      color: #9dd4da;
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin: 0 auto 28px;
+    }
+
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* SHOWS STRIP */
+    .strip {
+      background-color: var(--teal-mid);
+      padding: 28px 0;
+      text-align: center;
+    }
+
+    .strip p { color: #9dd4da; font-size: 0.95rem; }
+
+    /* SECTIONS */
+    .section { padding: 50px 0; }
+
+    .section-alt {
+      padding: 50px 0;
+      background-color: var(--light-teal);
+    }
+
+    /* IMAGE BANNER */
+    .image-banner {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px rgba(13,43,46,0.15);
+      margin-bottom: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Nexus <span>TV</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="highlights.html">Video Highlights</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Watch. Explore. Enjoy.</h1>
+      <p>Nexus TV — your destination for great entertainment, news, sports, and more.</p>
+      <div class="hero-btns">
+        <a href="shows.html" class="btn btn-teal">Browse Shows</a>
+        <a href="schedule.html" class="btn btn-outline" style="color:#9dd4da; box-shadow:inset 0 0 0 2px #9dd4da;">View Schedule</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="container">
+      <p>🔴 &nbsp; <strong style="color:var(--white);">LIVE NOW:</strong> &nbsp; The Evening News at 7 &nbsp;|&nbsp; Sports Wrap-Up at 9 &nbsp;|&nbsp; Late Night Talk at 11</p>
+    </div>
+  </div>
+
+  <!-- FEATURED SHOWS -->
+  <section class="section">
+    <div class="container">
+      <img src="images/h1.jpg" alt="On Air" class="image-banner" />
+
+      <h2 class="sec-title">Featured Shows</h2>
+      <div class="grid-3">
+
+        <div class="card">
+          <img src="images/h2.jpg" alt="News" />
+          <div class="card-body">
+            <span class="badge">News</span>
+            <h3>The Evening News</h3>
+            <p>Daily news coverage from Lesotho and around the world. Every weekday at 7 PM.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/h3.jpg" alt="Sports" />
+          <div class="card-body">
+            <span class="badge">Sports</span>
+            <h3>Sports Wrap-Up</h3>
+            <p>All the latest scores, match highlights, and sports analysis. Weekdays at 9 PM.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/h4.jpg" alt="Drama" />
+          <div class="card-body">
+            <span class="badge">Drama</span>
+            <h3>Broken Ties</h3>
+            <p>A gripping drama series about family, loyalty, and secrets. Sundays at 8 PM.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE BANNERS -->
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="sec-title">On Nexus TV This Week</h2>
+      <div class="grid-2">
+
+        <div class="card">
+          <img src="images/h5.jpg" alt="Documentary" />
+          <div class="card-body">
+            <span class="badge">Documentary</span>
+            <h3>Wild Southern Africa</h3>
+            <p>A stunning wildlife documentary series. Tuesdays and Thursdays at 8 PM.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/h6.jpg" alt="Music" />
+          <div class="card-body">
+            <span class="badge">Music</span>
+            <h3>Sounds of Africa</h3>
+            <p>Live performances and artist interviews celebrating African music. Saturdays at 7 PM.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVIGATION MENUS (show categories) -->
+  <section class="section">
+    <div class="container">
+      <h2 class="sec-title">Browse by Category</h2>
+      <div class="grid-3">
+
+        <div class="info-block" style="text-align:center;">
+          <div style="font-size:2rem; margin-bottom:8px;">📰</div>
+          <h3>News &amp; Current Affairs</h3>
+          <p>Stay informed with our daily news programmes.</p>
+          <br />
+          <a href="shows.html" class="btn btn-outline">See Shows</a>
+        </div>
+
+        <div class="info-block" style="text-align:center;">
+          <div style="font-size:2rem; margin-bottom:8px;">⚽</div>
+          <h3>Sports</h3>
+          <p>Football, athletics, and more from local and international sport.</p>
+          <br />
+          <a href="shows.html" class="btn btn-outline">See Shows</a>
+        </div>
+
+        <div class="info-block" style="text-align:center;">
+          <div style="font-size:2rem; margin-bottom:8px;">🎬</div>
+          <h3>Drama &amp; Movies</h3>
+          <p>Original series, films, and drama from Africa and the world.</p>
+          <br />
+          <a href="shows.html" class="btn btn-outline">See Shows</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="shows.html">Shows</a>
+      <a href="highlights.html">Video Highlights</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter / X">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="YouTube">▶️</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nexus TV. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
